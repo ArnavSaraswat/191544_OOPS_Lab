@@ -1,0 +1,26 @@
+/* https://www.hackerrank.com/challenges/c-tutorial-basic-data-types/problem */
+
+/* ARNAV SARASWAT 191544 IT32 */
+
+
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    int a;
+    float b;
+    long c;
+    double d;
+    char ch;
+    scanf("%d %ld %c %f %lf",&a,&c,&ch,&b,&d);
+
+    printf("%d\n",a);
+    printf("%ld\n",c);
+    printf("%c\n",ch);
+    printf("%f\n",b);
+    printf("%lf\n",d);
+    return 0;
+}
