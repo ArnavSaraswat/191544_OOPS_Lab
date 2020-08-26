@@ -1,0 +1,32 @@
+/* https://www.hackerrank.com/challenges/c-tutorial-functions/problem */
+
+/* ARNAV SARASWAT 191544 IT32 */
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int max_of_four(int a, int b, int c, int d)
+{
+    for( int i=INT16_MAX; i>= -(INT16_MAX); i--) 
+    { 
+        if(a-i==0)
+            return a;
+        else if(b-i==0)
+            return b;
+        else if(c-i==0)
+            return c;
+        else if(d-i==0)
+            return d;
+    }
+    return 0; 
+}
+
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    return 0;
+    
+}
